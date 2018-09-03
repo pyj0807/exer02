@@ -28,17 +28,19 @@ public class MessageDao extends Dao{
 		}
 	}
 
-	public List<Map> addMessage(){
+	public List<Map> getMessage(String id){
 		try {
 			Connection conn = DriverManager.getConnection(dburl, dbuser, dbpassword);
 			String sql = "select * from message where code";
-			String sqll = "select * from message where "
+			String sqll = "select * from message where id";
 			PreparedStatement ps = conn.prepareStatement(sql);
+			PreparedStatement pss = conn.prepareStatement(sqll);
 			
 		}catch(Exception e){
 			e.printStackTrace();
 			return null;
 		}
+		return null;
 	}
 	
 	
