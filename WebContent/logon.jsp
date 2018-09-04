@@ -30,6 +30,7 @@
 			}
 			
 			ldao.addLog(logid);
+			
 			response.sendRedirect(application.getContextPath()+"/");
 			
 		}
