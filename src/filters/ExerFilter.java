@@ -19,7 +19,7 @@ public class ExerFilter extends HttpFilter{
 		HttpSession session = request.getSession();
 		// 사용저세션에 인증을 나타내는 키가
 		//boolean b = (Boolean)session.getAttribute("auth");
-		if(session.getAttribute("auth")==null) {
+		if(session.getAttribute("auth")!=null) {
 			// 있으면 통과
 			chain.doFilter(request, response);
 		}else {
