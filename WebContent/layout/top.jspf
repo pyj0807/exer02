@@ -7,7 +7,7 @@
 <title> Unknown </title>
 </head>
 <body style="text-align: center;">
-	<h1>? Unknown Application ?</h1>
+	<h1><a href="<%=application.getContextPath()%>/" style="text-decoration: none;">? Unknown Application ?</a></h1>
 	<p>
 		어떤 프로그램을 만들어볼까?
 	</p>

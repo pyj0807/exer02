@@ -14,7 +14,8 @@
 		</environment>
 	</environments>
 	<mappers>
-		<mapper resource="mappers/mapper-baseresult.xml" />
-		<mapper resource="mappers/mapper-baseresult.xml" />
+		<mapper resource="mappers/board.xml" />
+		<mapper resource="mappers/board.xml" />
+		<mapper resource="mappers/goodlog.xml" />
 	</mappers>
 </configuration>

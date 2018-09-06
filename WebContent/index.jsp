@@ -17,7 +17,7 @@
 		<%=latest==null ? "-": sdf.format(latest) %></small>〕	
 </p>
 <p style="text-align: right;">
-	<a href="<%=application.getContextPath()%>/board/boardwrite.jsp"><button type="button">게시판</button></a>	
+	<a href="<%=application.getContextPath()%>/board/list.jsp"><button type="button">게시판</button></a>	
 	<a href="<%=application.getContextPath()%>/message/send.jsp"><button type="button">채팅방</button> </a>
 	<a href="<%=application.getContextPath()%>/account/change.jsp"><button type="button">비밀번호변경</button></a>	
 	<a href="<%=application.getContextPath()%>/logout.jsp"><button type="button">로그아웃</button></a>
