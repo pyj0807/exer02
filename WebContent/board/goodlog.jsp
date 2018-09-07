@@ -4,29 +4,32 @@
     pageEncoding="UTF-8"%>
 <%@ page import="beans.*" %>    
 <%
-	GoodDao gdao = new GoodDao();
-	BoardDao bdao = new BoardDao();
 	String id = (String)session.getAttribute("logid");
 	int no = Integer.parseInt(request.getParameter("no"));
 	Map m = new HashMap();
 		m.put("actor", id);
 		m.put("target", no);
 	
-	int n = gdao.addLog(m);
-	
+	GoodDao gdao = new GoodDao();
+	int r = gdao.addLog(m);
+	if(r==1){
+		BoardDao board = new BoardDao();
+		board.upGoodlog(no);
+		response.sendRedirect(application.getContextPath() + "/board/view.jsp?no=" + no);
+	}else {
 	
 %>    
     
 <%@ include file="/layout/top.jspf"%>
 <%@ include file="/layout/nav.jspf"%>
+<h1>《추천하기》</h1>
+<p>이미 삭제된 글, 혹은 추천하신글입니다.</p>
 
-<%if(n==1){%>
-	삭제된 글이던가, 데이터를 가져올수가 없습니다.
-<%}else{ %>
-	
-<%} %>
 
 
 
 
 <%@ include file="/layout/bottom.jspf"%>
+<%
+	}
+%>

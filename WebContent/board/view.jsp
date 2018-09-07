@@ -33,7 +33,7 @@
 		<%} %>
 	</p>
 	<a style="text-align: center;" href="<%=application.getContextPath()%>/board/goodlog.jsp?no=<%=one.get("NO")%>"><b><button>추천</button></b></a>
-	s<a style="text-align: center;" href="<%=application.getContextPath()%>/board/list.jsp?no=<%=one.get("NO")%>"><b><button>목록</button></b></a>
+	<a style="text-align: center;" href="<%=application.getContextPath()%>/board/list.jsp?no=<%=one.get("NO")%>"><b><button>목록</button></b></a>
 <%} %>
 	
 	

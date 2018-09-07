@@ -24,6 +24,7 @@ public class ExerFilter extends HttpFilter{
 			chain.doFilter(request, response);
 		}else {
 			// 없으면 로그인으로 리다이렉트
+			session.setAttribute("dest", request.getRequestURI());
 			response.sendRedirect(request.getContextPath()+"/index.jsp");
 		}
 	}

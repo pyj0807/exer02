@@ -2,7 +2,7 @@
 <mapper namespace="goodlog">
 
 	<insert parameterType="java.util.HashMap" id="addDataUsingMap">
-		insert into goodlog values(#{actor}, #{no})
+		insert into goodlog values(#{actor}, #{target})
 	</insert>
 
 	<select parameterType="java.lang.String" id="getSomeDataByActor" resultType="java.lang.Integer"> 

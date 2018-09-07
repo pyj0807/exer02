@@ -6,6 +6,16 @@
 <%
 	String logid =request.getParameter("logid");
 	String logpass = request.getParameter("logpass");
+	String freepass = request.getParameter("keep");
+	
+	
+	if(freepass != null){
+		Cookie c = new Cookie("freepass", logid);
+		c.setMaxAge(60*60);
+		c.setPath(application.getContextPath());
+		response.addCookie(c);
+	}
+	
 	
 	AccountDao dao= new AccountDao();
 	
@@ -19,9 +29,10 @@
 		}else{
 			set.add(logid);
 			application.setAttribute("users", set); // 생략이 가능하긴 함 why?
-					
+				
 			session.setAttribute("auth", true);
 			session.setAttribute("logid", logid);
+			
 			
 			LoginLogDao ldao = new LoginLogDao();
 			Map log = ldao.getLatesetLogById(logid);
