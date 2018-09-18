@@ -1,4 +1,4 @@
-<%@ page import="beans.BoardDao"%>
+<%@page import="beans.BoardDao"%>
 <%@ page import="java.io.File"%>
 <%@ page import="com.oreilly.servlet.multipart.Part"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"

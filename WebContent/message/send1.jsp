@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="/layout/top.jspf"%>
-<%@ page import="beans.*" %>
 	
 	<form action="<%=application.getContextPath() %>/message/sending.jsp" method="post">
 	<p>

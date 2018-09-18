@@ -1,6 +1,6 @@
 <%-- 특정 키에 해당하는 데이터 출력 --%>
+<%@page import="beans.BoardDao"%>
 <%@ page import="java.util.Map"%>
-<%@ page import="beans.BoardDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%

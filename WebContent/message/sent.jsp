@@ -1,6 +1,6 @@
+<%@page import="beans.MessageDao"%>
 <%@ page import="java.sql.Date"%>
 <%@ page import="java.util.UUID"%>
-<%@ page import="beans.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%

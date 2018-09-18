@@ -1,7 +1,7 @@
+<%@page import="beans.AccountDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page errorPage="/error/default.jsp" %>
-<%@ page import="beans.*" %>
 <%
 	String name =request.getParameter("name");
 	String id= request.getParameter("id");
